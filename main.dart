@@ -651,15 +651,15 @@ class _AppNavigationPageState extends State<AppNavigationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: PreferredSize(
-        preferredSize: Size.fromHeight(200.0), // Set your desired height
+        preferredSize: Size.fromHeight(200.0), 
         child: AppBar(
           automaticallyImplyLeading: false, // To remove the default back button
           backgroundColor: Color(0xFFF1C5C5), // Make the AppBar transparent
           flexibleSpace: Container(
             decoration: BoxDecoration(
               image: DecorationImage(
-                image: AssetImage("assets/test-black.png"), // Replace with your image path
-                fit: BoxFit.cover, // Adjust the fit as needed
+                image: AssetImage("assets/test-black.png"), 
+                fit: BoxFit.cover, 
               ),
             ),
           ),
@@ -906,7 +906,7 @@ class _AppNavigationPageState extends State<AppNavigationPage> {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/altruism-blanc-fair.png"), // Change to your image path
+            image: AssetImage("assets/altruism-blanc-fair.png"), 
             fit: BoxFit.fill,
           ),
         ),
@@ -1042,10 +1042,7 @@ class HomeScreen extends StatelessWidget {
             SizedBox(height: 20.0),
             ElevatedButton(
               onPressed: () {
-                // Navigate to camera detection page or integrate your AI model here
-                // Example: Navigator.pushNamed(context, '/camera_detection');
-                // Or integrate your AI model function here
-                // Example: performCameraDetection();
+                // 
               },
               child: Text('Detection with Camera'),
               style: ElevatedButton.styleFrom(
@@ -1316,8 +1313,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                   nameController.text = newName;
                 });
 
-                // Do something with the new name (e.g., save it to database)
-                // Your implementation here...
+               //
 
                 // Close the dialog
                 Navigator.of(context).pop();
@@ -1369,7 +1365,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                 String newEmail = newEmailController.text;
 
                 // Perform password verification logic here
-                bool isPasswordCorrect = _verifyPassword(password); // Replace this with your own verification logic
+                bool isPasswordCorrect = _verifyPassword(password);
 
                 if (isPasswordCorrect) {
                   // Password is correct, proceed with email change
@@ -1398,9 +1394,9 @@ class _EditProfilePageState extends State<EditProfilePage> {
     );
   }
 
-// Replace this function with your actual password verification logic
+
   bool _verifyPassword(String password) {
-    // Example: Compare entered password with stored password
+    
     String storedPassword = 'password123'; // Replace with actual stored password
     return password == storedPassword;
   }
@@ -1449,7 +1445,7 @@ class _EditProfilePageState extends State<EditProfilePage> {
                     String confirmPassword = confirmPasswordController.text;
 
                     // Perform password verification logic here
-                    bool isOldPasswordCorrect = _verifyOldPassword(oldPassword); // Replace this with your actual verification logic
+                    bool isOldPasswordCorrect = _verifyOldPassword(oldPassword); 
 
                     if (isOldPasswordCorrect) {
                       // Old password is correct, proceed with change
@@ -1491,10 +1487,10 @@ class _EditProfilePageState extends State<EditProfilePage> {
     );
   }
 
-// Replace this function with your actual password verification logic
+
   bool _verifyOldPassword(String password) {
-    // Example: Compare entered old password with stored password
-    String storedPassword = 'password123'; // Replace with actual stored password
+    
+    String storedPassword = 'password123'; 
     return password == storedPassword;
   }
 
@@ -1518,7 +1514,7 @@ class TipsPage extends StatelessWidget {
       body: Container(
         decoration: BoxDecoration(
           image: DecorationImage(
-            image: AssetImage("assets/sign-in-background.png"), // Replace with your image path
+            image: AssetImage("assets/sign-in-background.png"), 
             fit: BoxFit.cover,
           ),
         ),
@@ -1615,7 +1611,7 @@ class TipsItem extends StatelessWidget {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-          image: AssetImage("assets/tips-bg.png"), // Replace with your image path
+          image: AssetImage("assets/tips-bg.png"), 
           fit: BoxFit.cover,
         ),
       ),
